@@ -1,0 +1,12 @@
+Instructions to Install and configure Docker Containers 
+
+Start with updating system packages:
+  sudo apt-get update
+  
+Install required and recomended tools:
+    sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg \
+    lsb-release       
