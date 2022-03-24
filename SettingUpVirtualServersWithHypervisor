@@ -1,0 +1,26 @@
+Instructions for setting up the VMware ESXI Hypervisor and Installing Linux or Windows VMs
+  
+1.Sign up to VMWare and download VMware Hypervisor ESXi ISO image 
+2.Download a software like Rufus to make a bootable drive 
+3.Connect this bootabledrive to your server 
+4.On your server, login to BIOS setup and change boot sequence to boot to the USB drive 
+5.Save and restart system 
+6.If you got a message "Not a COM32R image" type install and hit Enter and it will start installing 
+7.Follow the prompts and select a password for 'root' user 
+8.The system will ask you to restart 
+9.After restart the system will give you this message message: "Download tools to manage this host from the IP address listed upon boot up 
+10.On a different PC, go to this address. Your browser might prompt you that its unsafe, select to proceed 
+11.A web page will come asking username password. Type root as username and password that you selected during installation 
+12.Download windows server evaluation version ISO file and download 
+13.Download Ubuntu Linux ISO file and or another flavor of Linux 
+14.Go to Storage --> datastore --> Datastore Browser --> upload files and upload downloaded iso files here 
+15.Close Datastore Browser 
+16.Go to Host --> create/register VM --> create new virtual machine 
+17.Follow the prompts to create a virtual machine 
+18.Select the number of cores, memory, and hard drive space 
+19.Be sure to check off the following options under CPU –Expose hardware assisted virtualization and Expose IOMMU to the guest OS 
+20.Under CD/DVD Drive select the path to the location of your operating system ISO file under the datastore 
+21.Click finish 
+22.Go to virtual machines and click the virtual machine you just created. 
+23.Double click the server to power it on.
+24.Install the operating system like you would on a physical machine
